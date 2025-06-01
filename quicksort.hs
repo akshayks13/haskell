@@ -1,5 +1,4 @@
-
-
+-- Quicksort
 qsort :: Ord a => [a] -> [a]
 qsort [] = []
 qsort (x:xs) = smallertsorted ++ [x] ++ biggertsorted
