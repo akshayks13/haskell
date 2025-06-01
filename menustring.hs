@@ -1,4 +1,3 @@
-
 lengthofString s = if s == ""
     then 0
     else 1 + lengthofString(tail s)
