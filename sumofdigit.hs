@@ -1,4 +1,3 @@
-
 -- Sum of digits of a number
 summ num = if num == 0
     then 0
@@ -10,6 +9,5 @@ rev num r = if num == 0
     else rev (div num 10) (r*10 + num `mod` 10)
 
 -- factorial
-
 fact 0 = 1
 fact n = n * fact(n-1)
