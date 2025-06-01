@@ -22,5 +22,4 @@ simplefunc (x:xs)
     | even x = x^2 : simplefunc xs
     | otherwise = x : simplefunc xs
 
-
 x = [a+b | a <- [1..10],b <- [10..20], even a && odd b]
