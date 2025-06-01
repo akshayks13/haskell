@@ -1,4 +1,4 @@
--- -- Reverse a string
+-- Reverse a string
 rev xs = if null xs 
     then xs
     else rev(tail xs) ++ [head xs]
