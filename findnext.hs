@@ -1,4 +1,3 @@
-
 findafter l a = if null l
     then []
     else if a == head l 
