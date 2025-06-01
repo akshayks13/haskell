@@ -1,4 +1,3 @@
-
 classifySize :: Int -> String
 classifySize n = if n<10
     then "Small"
