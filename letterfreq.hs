@@ -1,4 +1,3 @@
-
 import Data.Char (isAlpha, isDigit, toLower)
 
 -- Function to count vowels, consonants, and numbers
