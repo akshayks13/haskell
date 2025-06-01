@@ -1,4 +1,3 @@
-
 lengthofList xs = if null xs
                   then 0
                   else 1 + lengthofList(tail xs)
