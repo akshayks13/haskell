@@ -1,4 +1,3 @@
-
 -- GCD 
 gcdRecursive a b
     | b == 0    = abs a  -- Base case: If b is 0, return the absolute value of a
@@ -64,4 +63,3 @@ hailstone 1 = [1]  -- Base case: the sequence ends at 1
 hailstone n 
     | even n    = n : hailstone (n `div` 2)  -- If n is even, divide by 2
     | otherwise = n : hailstone (3 * n + 1)  -- If n is odd, apply 3n + 1
-
