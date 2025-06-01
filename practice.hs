@@ -1,17 +1,20 @@
-
+-- factorial
 fact 0 = 1
 fact n = n * fact(n-1)
 
+-- Number to list
 numtolist n = if n == 0
     then []
     else numtolist (div n 10) ++ [mod n 10]
 
+-- Find next element
 findnext l x = if null l
     then -1
     else if (head l) == x
         then head (tail l)
         else findnext (tail l) x
 
+-- Count characters
 countchar s (vowels,consanants,digits) = if null s
     then (vowels,consanants,digits)
     else if elem (head s) "aeiuo"
@@ -32,34 +35,41 @@ oddtime l s = if null l
         then oddtime (tail l)(s ++ [head l])
         else oddtime (tail l)(s)
 
+-- Remove Duplicates
 removeDuplicates l s = if null l
     then s
     else if elem (head l) s 
         then removeDuplicates (tail l) (s)
         else removeDuplicates (tail l) (s ++ [head l])
 
+-- reverse string
 rev s = if null s
     then []
     else rev (tail s) ++ [head s]
 
+-- Length of a list
 lengthlist l = if null l
     then 0
     else 1+lengthlist (tail l)
 
+-- Product without *
 prodnums a b = if b==0 || a==0
     then 0
     else if b>0 
         then a + prodnums (a) (b-1)
         else -(prodnums a (-b))
 
+-- Unpacking list
 nestedtolist l s = if null l
     then s
     else nestedtolist (tail l) (s ++ (head l))
 
+-- Sum of sum of numbers upto n
 sumnumlist :: (Num a, Enum a) => [a] -> a
 sumnumlist [] = 0
 sumnumlist (x:xs) = sum [1..x] + sumnumlist xs
 
+-- Prime check
 isprime :: Integral a => a -> Bool
 isprime x = if x == 1
     then False
@@ -71,6 +81,7 @@ isprime x = if x == 1
                 then False
                 else True
 
+-- Add 2 to a number
 add2 :: Integer -> Integer
 add2 = (+2)
 
