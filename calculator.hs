@@ -1,4 +1,3 @@
-
 -- Using Guards
 calculate :: Int -> Int -> Char -> Int
 calculate a b op
