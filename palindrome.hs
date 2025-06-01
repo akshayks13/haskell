@@ -1,4 +1,3 @@
-
 pal1 s = s == reverse s
 
 pal :: Eq a => [a] -> Bool
@@ -10,8 +9,6 @@ pal s =
         then pal (init (tail s))  -- Recursively check the rest of the list
         else False
 
-
 lenString s = if s==""
     then 0
     else 1 + lenString(tail s)
-
