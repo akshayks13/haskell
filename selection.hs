@@ -1,4 +1,3 @@
-
 -- Age Problem
 -- main = do
 --     putStrLn "Enter a number : "
