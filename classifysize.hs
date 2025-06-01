@@ -5,7 +5,6 @@ classifySize n = if n<10
         then "Medium"
         else "Large"
 
-
 main :: IO ()
 main = do
     putStrLn "Enter a number : "
