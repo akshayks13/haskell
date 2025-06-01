@@ -1,4 +1,3 @@
-
 main :: IO ()
 main = do
     putStrLn "Enter the number of students:"
