@@ -1,4 +1,3 @@
-
 fixedRate (name , cost) = (name , cost*0.1) 
 
 progressiveRate (name,cost) 
