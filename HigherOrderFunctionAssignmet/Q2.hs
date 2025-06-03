@@ -1,4 +1,3 @@
-
 leaveUntil :: (a -> Bool) -> [a] -> [a]
 leaveUntil _ [] = []
 leaveUntil f (x:xs)
