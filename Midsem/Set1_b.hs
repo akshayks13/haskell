@@ -1,4 +1,3 @@
-
 -- Function to remove all occurrences of "abc" from a single string
 removeABC :: String -> String
 removeABC [] = []
