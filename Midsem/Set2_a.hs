@@ -1,4 +1,3 @@
-
 -- Higher order function limTransform
 limTransform :: (a -> a) -> Int -> [a] -> [a]
 limTransform _ _ [] = []  -- Base case: empty list
