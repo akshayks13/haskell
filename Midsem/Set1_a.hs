@@ -1,4 +1,3 @@
-
 limFiltTransform :: (a -> Bool) -> (a -> a) -> Int -> [a] -> [a]
 limFiltTransform _ _ _ [] = []  -- Base case: empty list
 limFiltTransform p f limit (x:xs)
