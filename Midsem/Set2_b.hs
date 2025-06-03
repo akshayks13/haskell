@@ -1,4 +1,3 @@
-
 -- Function to remove digits from a single string
 removeDigitsFromString :: String -> String
 removeDigitsFromString [] = []  -- Base case: empty string
